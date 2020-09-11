@@ -76,11 +76,11 @@ class Dog
     if !dog.empty?
       dog_data = dog[0]
       attributes = {
-    :id => dog_data[0],
-    :name => dog_data[1],
-    :breed => dog_data[2]
-    }
-      dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
+      :id => dog_data[0],
+      :name => dog_data[1],
+      :breed => dog_data[2]
+       }
+      dog = Dog.new(attributes)
     else
       dog = self.create(name: name, breed: breed)
     end
